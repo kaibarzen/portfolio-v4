@@ -66,7 +66,7 @@ const Skills = () =>
 								Amplify
 							</div>
 							<div>
-								Dynamo DB
+								DynamoDB
 							</div>
 							<div>
 								CloudFormation
