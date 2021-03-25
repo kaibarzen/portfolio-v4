@@ -1,4 +1,5 @@
 import React, {ReactNode} from 'react';
+import CypherVisible from '../../../kit/effect/CypherVisible';
 
 interface Props
 {
@@ -25,7 +26,7 @@ const Project = (props: Props) =>
 
 			<div className={'desc'}>
 				<h2>
-					{props.title}
+					<CypherVisible shuffleMax={6} delay={20}>{props.title}</CypherVisible>
 				</h2>
 				<p>
 					{props.children}

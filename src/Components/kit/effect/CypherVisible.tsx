@@ -18,7 +18,7 @@ interface Props
  */
 const CypherVisible = (props: Props) =>
 {
-	const {ref, inView} = useInView();
+	const {ref, inView} = useInView({triggerOnce: true});
 	return <div ref={ref}> <Cypher {...props} enabled={inView}/> </div>
 };
 
