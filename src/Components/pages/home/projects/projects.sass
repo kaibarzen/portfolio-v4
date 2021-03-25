@@ -28,13 +28,24 @@ $containerPadding: 64px
       display: flex
       flex-direction: column
       justify-content: space-between
+      max-width: 80vw
 
       p
         flex-grow: 2
         min-height: 100px
+        width: fit-content
+        min-width: 600px
+        max-width: 50vw
+
+      h2
+        width: fit-content
 
     .img
       padding: 32px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
 
     img
       box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75)
@@ -47,3 +58,19 @@ $containerPadding: 64px
       background-color: rgba(0,0,0,0.5)
       width: min-content
       border-radius: 8px
+
+  .iContainer
+    padding: 32px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 600px
+    height: 300px
+
+    .iframe
+      transform: scale(0.3, 0.3)
+
+      iframe
+        width: 1920px
+        height: 1080px

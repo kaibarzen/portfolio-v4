@@ -1,8 +1,10 @@
 import React from 'react';
 import './projects.sass';
 import Project from './Project';
-import dungeon from '../../../../resources/media/dungeon.png';
 import {Element} from 'react-scroll/modules';
+import dungeon from '../../../../resources/media/dungeon.png';
+import wahlen from "../../../../resources/media/wahlen.png"
+import ProjectPortfolio from './ProjectPortfolio';
 
 const Projects = () =>
 {
@@ -28,7 +30,7 @@ const Projects = () =>
 			</div>
 			<Project
 				title={'Wahlen'}
-				image={dungeon}
+				image={wahlen}
 				tags={["React"]}
 				reversed={true}
 				gradient={[]}
@@ -38,16 +40,13 @@ const Projects = () =>
 				fasfsa
 			</Project>
 
-			<Project
-				title={'Dungeon Generator'}
-				image={dungeon}
+			<ProjectPortfolio
+				title={'My Portfolio Website'}
 				tags={["React"]}
 				gradient={["#c0392b", "#8e44ad"]}
 			>
-				asasffas
-				afsfasfsa
-				fasfsa
-			</Project>
+				This is listed so you can view the source code here ! :)
+			</ProjectPortfolio>
 		</div>
 	);
 };
