@@ -2,11 +2,13 @@ import React from 'react';
 import './projects.sass';
 import Project from './Project';
 import dungeon from '../../../../resources/media/dungeon.png';
+import {Element} from 'react-scroll/modules';
 
 const Projects = () =>
 {
 	return (
 		<div className={'projects'}>
+			<Element name={"projects"}/>
 			<div className={'gradient purple'}>
 				<div className={'content'}>
 					<h1 className={'underline '}>

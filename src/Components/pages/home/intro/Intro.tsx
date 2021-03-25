@@ -1,13 +1,23 @@
 import React from 'react';
 import './intro.sass';
-import person from "../../../../resources/media/person.svg"
+import person from '../../../../resources/media/person.svg';
+import {Element, scroller, animateScroll} from 'react-scroll/modules';
 
 const Intro = () =>
 {
+
+	const opt = {
+		smooth: "easeInOutCubic"
+	}
+
 	return (
 		<div className={'intro'}>
-			<div className={"person"} style={{backgroundImage:`url(${person})`}}>
-				<div className={"container"}>
+			<Element name={"intro"}/>
+			<div
+				className={'person'}
+				style={{backgroundImage: `url(${person})`}}
+			>
+				<div className={'container'}>
 					<div>
 						<h1>
 							Hi, I'm Kai
@@ -18,8 +28,31 @@ const Intro = () =>
 						</p>
 					</div>
 
-					<div>
-						View Skills | View Projects | Contact
+					<div className={'scroll'}>
+						<div
+							onClick={() =>
+							{
+								scroller.scrollTo("skills", opt)
+							}}
+						>
+							My Skills
+						</div>
+						<div
+							onClick={() =>
+							{
+								scroller.scrollTo("projects", opt)
+							}}
+						>
+							Projects
+						</div>
+						<div
+							onClick={() =>
+							{
+								scroller.scrollTo("contact", opt)
+							}}
+						>
+							Contact Me
+						</div>
 					</div>
 
 				</div>

@@ -2,11 +2,13 @@ import React from 'react';
 import './skills.sass';
 import person from '../../../../resources/media/person.svg';
 import GradientBox from './GradientBox';
+import {Element} from 'react-scroll/modules';
 
 const Skills = () =>
 {
 	return (
 		<div className={'skills'}>
+			<Element name={"skills"}/>
 			<div className={"person"} style={{backgroundImage:`url(${person})`}}>
 					<div className={"container"}>
 

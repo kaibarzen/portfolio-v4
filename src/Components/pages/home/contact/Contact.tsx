@@ -4,11 +4,13 @@ import Github from '../../../kit/icons/Github';
 import Link from '../../../kit/effect/Link';
 import LinkedIn from '../../../kit/icons/LinkedIn';
 import Mail from '../../../kit/icons/Mail';
+import {Element} from 'react-scroll/modules';
 
 const Contact = () =>
 {
 	return (
 		<div className={'contact'}>
+			<Element name={"contact"}/>
 			<div className={'container'}>
 				<h1 className={'underline'}>
 					Contact Me
