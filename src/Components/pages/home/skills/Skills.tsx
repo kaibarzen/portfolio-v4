@@ -16,7 +16,7 @@ const Skills = () =>
 							</h1>
 						</div>
 
-						<GradientBox title={"Frontend"} gradient={"linear-gradient(to right, #8a2387, #e94057, #f27121)"}>
+						<GradientBox title={"Frontend"} gradient={["#783088", "#cb4273"]}>
 							<div>
 								HTML
 							</div>
@@ -34,7 +34,7 @@ const Skills = () =>
 							</div>
 						</GradientBox>
 
-						<GradientBox title={"Backend"} gradient={"linear-gradient(to right, #8a2387, #e94057, #f27121)"}>
+						<GradientBox title={"Backend"}gradient={["#7F00FF", "#E100FF"]}>
 							<div>
 								NodeJS
 							</div>
@@ -52,7 +52,7 @@ const Skills = () =>
 							</div>
 						</GradientBox>
 
-						<GradientBox title={"AWS"} gradient={"linear-gradient(to right, #8a2387, #e94057, #f27121)"}>
+						<GradientBox title={"AWS"} gradient={["#FDC830", "#F37335"]}>
 							<div>
 								Lambda
 							</div>
