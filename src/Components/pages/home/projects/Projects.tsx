@@ -20,7 +20,7 @@ const Projects = () =>
 				<Project
 					title={'Dungeon Generator'}
 					image={dungeon}
-					tags={["React"]}
+					tags={["React", "test"]}
 					gradient={[]}
 				>
 					asasffas
