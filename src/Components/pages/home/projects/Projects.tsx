@@ -42,7 +42,7 @@ const Projects = () =>
 
 			<ProjectPortfolio
 				title={'My Portfolio Website'}
-				tags={["React"]}
+				tags={["React", "Typescript", "Sass"]}
 				gradient={["#c0392b", "#8e44ad"]}
 			>
 				This is listed so you can view the source code here ! :)

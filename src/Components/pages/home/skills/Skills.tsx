@@ -3,6 +3,9 @@ import './skills.sass';
 import person from '../../../../resources/media/person.svg';
 import GradientBox from './GradientBox';
 import {Element} from 'react-scroll/modules';
+import CypherLoop from "../../../kit/effect/CypherLoop";
+import Cypher from "../../../kit/effect/Cypher";
+import CypherVisible from "../../../kit/effect/CypherVisible";
 
 const Skills = () =>
 {
@@ -14,19 +17,19 @@ const Skills = () =>
 
 						<div>
 							<h1 className={"underline"}>
-								My Skills
+								<CypherVisible shuffleMin={1} shuffleMax={3}>My Skills </CypherVisible>
 							</h1>
 						</div>
 
-						<GradientBox title={"Frontend"} gradient={["#783088", "#cb4273"]}>
+						<GradientBox title={"Frontend"} gradient={["#12c2e9", "#c471ed", "#f64f59"]}>
 							<div>
 								HTML
 							</div>
 							<div>
-								CSS
+								<CypherLoop strings={[" CSS", "SASS", "LESS"]}/>
 							</div>
 							<div>
-								REACT
+								<CypherLoop strings={["React", "React Native"]}/>
 							</div>
 							<div>
 								Javascript
@@ -36,7 +39,7 @@ const Skills = () =>
 							</div>
 						</GradientBox>
 
-						<GradientBox title={"Backend"}gradient={["#7F00FF", "#E100FF"]}>
+						<GradientBox title={"Backend"}gradient={["#8A2387", "#E94057", "#F27121"]}>
 							<div>
 								NodeJS
 							</div>
@@ -47,14 +50,14 @@ const Skills = () =>
 								MongoDB
 							</div>
 							<div>
-								MySQL SQL
+								<CypherLoop strings={["MySQL", "  SQL"]}/>
 							</div>
 							<div>
 								Serverless
 							</div>
 						</GradientBox>
 
-						<GradientBox title={"AWS"} gradient={["#FDC830", "#F37335"]}>
+						<GradientBox title={"AWS"} gradient={["#f12711", "#f5af19"]}>
 							<div>
 								Lambda
 							</div>
