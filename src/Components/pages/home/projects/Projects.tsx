@@ -22,6 +22,8 @@ const Projects = () =>
 					image={dungeon}
 					tags={["React", "test"]}
 					gradient={[]}
+					source={"SRC"}
+					href={"asffasf"}
 				>
 					asasffas
 					afsfasfsa

@@ -5,6 +5,7 @@ import Link from '../../../kit/effect/Link';
 import LinkedIn from '../../../kit/icons/LinkedIn';
 import Mail from '../../../kit/icons/Mail';
 import {Element} from 'react-scroll/modules';
+import Xing from '../../../kit/icons/Xing';
 
 const Contact = () =>
 {
@@ -16,12 +17,16 @@ const Contact = () =>
 					Contact Me
 				</h1>
 				<p>
-					Feel free to blablabla
+					Feel free to contact me :)
 				</p>
 				<div className={'icons'}>
 
 					<Link url={'https://www.linkedin.com/in/kai-barzen-3285091ab/'}>
 						<LinkedIn size={100} />
+					</Link>
+
+					<Link url={'https://www.xing.com/profile/Kai_Barzen/cv'}>
+						<Xing size={100} />
 					</Link>
 
 					<Link url={'https://github.com/kaibarzen'}>
