@@ -1,5 +1,7 @@
 import React, {ReactNode} from 'react';
 import CypherVisible from '../../../kit/effect/CypherVisible';
+import CodeIcon from '@material-ui/icons/Code';
+import CallMadeIcon from '@material-ui/icons/CallMade';
 
 interface Props
 {
@@ -20,13 +22,43 @@ const Project = (props: Props) =>
 		<div
 			className={`project ${props.reversed ? 'reversed' : ''}`}
 			style={{
-				backgroundImage: `linear-gradient(to right, ${props.gradient.join(", ")})`
+				backgroundImage: `linear-gradient(to right, ${props.gradient.join(', ')})`,
 			}}
 		>
 
 			<div className={'desc'}>
 				<h2>
-					<CypherVisible shuffleMax={6} delay={20}>{props.title}</CypherVisible>
+					<CypherVisible
+						shuffleMax={6}
+						delay={20}
+					>
+						{props.title}
+					</CypherVisible>
+					{
+						props.href ?
+							<CallMadeIcon
+								fontSize={'large'}
+								onClick={() =>
+								{
+									window.open(props.href, "_blank")
+								}}
+							/>
+							:
+							null
+					}
+					{
+						props.source ?
+							<CodeIcon
+								fontSize={'large'}
+								onClick={() =>
+								{
+									window.open(props.source, "_blank")
+								}}
+							/>
+							:
+							null
+					}
+
 				</h2>
 				<p>
 					{props.children}
