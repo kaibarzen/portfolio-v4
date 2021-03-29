@@ -21,7 +21,7 @@ const Contact = () =>
 				</p>
 				<div className={'icons'}>
 
-					<Link url={'https://www.linkedin.com/in/kai-barzen-3285091ab/'}>
+					<Link url={'https://www.linkedin.com/in/kaibarzen/'}>
 						<LinkedIn size={100} />
 					</Link>
 
