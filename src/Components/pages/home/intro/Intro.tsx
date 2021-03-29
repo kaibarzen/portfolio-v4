@@ -24,7 +24,7 @@ const Intro = () =>
 						</h1>
 
 						<p>
-							I'm a fullstack web developer which loves working with react and aws.
+							I'm a fullstack web developer who loves working with react and aws.
 						</p>
 					</div>
 

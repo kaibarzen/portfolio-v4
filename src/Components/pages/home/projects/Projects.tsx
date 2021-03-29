@@ -40,7 +40,7 @@ const Projects = () =>
 				href={'https://wahlen.volksfreund.cloud/'}
 			>
 				Election website made for the 2021 election in Rhineland-Palatinate.
-				Over the timespan of 24 hours the website got served 95,000 times with 135,000 successful api calls.
+				During the election the website got served 95,000 times with 135,000 successful api calls.
 			</Project>
 
 			<Project
@@ -50,7 +50,7 @@ const Projects = () =>
 				image={attack}
 				source={'https://github.com/kaibarzen/fairy-tail-attack'}
 			>
-				Fairy Tail Attack! is an card generator to easily create and modify playing cards for virtual tabletop
+				Fairy Tail Attack! is a card generator to easily create and modify playing cards for virtual tabletop
 				gaming.
 			</Project>
 
@@ -63,7 +63,7 @@ const Projects = () =>
 				source={'https://github.com/kaibarzen/Am-I-Online'}
 				tags={["Javascript", "React", "AWS", "Lambda", "ApiGateway"]}
 			>
-				Joke app created to test your connectivity, you can install it on your device for offline functionality.
+				Am I Online? is a PWA app created to test your connectivity, you can install it on your device for offline functionality.
 			</ProjectWebsite>
 
 			<ProjectWebsite
@@ -73,7 +73,7 @@ const Projects = () =>
 				source={'https://github.com/kaibarzen/portfolio-v4'}
 				url={'https://master.d2sr79gikb2sst.amplifyapp.com/'}
 			>
-				My portfolio is listed here so you can view the source code or play around with the miniature version on the right hand side.
+				My portfolio is listed here so you can view the source code or play around with the miniature version on the right-hand side.
 			</ProjectWebsite>
 		</div>
 	);
