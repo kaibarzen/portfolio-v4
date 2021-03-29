@@ -1,10 +1,9 @@
 import React from 'react';
 import './skills.sass';
-import person from '../../../../resources/media/person.svg';
+import intro from '../../../../resources/media/intro.svg';
 import GradientBox from './GradientBox';
 import {Element} from 'react-scroll/modules';
 import CypherLoop from "../../../kit/effect/CypherLoop";
-import Cypher from "../../../kit/effect/Cypher";
 import CypherVisible from "../../../kit/effect/CypherVisible";
 
 const Skills = () =>
@@ -12,7 +11,7 @@ const Skills = () =>
 	return (
 		<div className={'skills'}>
 			<Element name={"skills"}/>
-			<div className={"person"} style={{backgroundImage:`url(${person})`}}>
+			<div className={"person"} style={{backgroundImage:`url(${intro})`}}>
 					<div className={"container"}>
 
 						<div>
