@@ -28,7 +28,7 @@ const Projects = () =>
 					href={'https://dungeon.kaibarzen.cloud/'}
 				>
 					Dungeon Generator is a minimalistic dungeon drawer for virtual tabletop games.
-					It's based around the HTML canvas object and includes many adv fts like asjkasfjn
+					It utilizes the HTML canvas element and includes advanced features like layering.
 				</Project>
 			</div>
 			<Project
@@ -61,8 +61,9 @@ const Projects = () =>
 				url={'https://online.kaibarzen.cloud/'}
 				href={'https://online.kaibarzen.cloud/'}
 				source={'https://github.com/kaibarzen/Am-I-Online'}
+				tags={["Javascript", "React", "AWS", "Lambda", "ApiGateway"]}
 			>
-				FTA!
+				Joke app created to test your connectivity, you can install it on your device for offline functionality.
 			</ProjectWebsite>
 
 			<ProjectWebsite
@@ -72,9 +73,7 @@ const Projects = () =>
 				source={'https://github.com/kaibarzen/portfolio-v4'}
 				url={'https://master.d2sr79gikb2sst.amplifyapp.com/'}
 			>
-				This is listed here so you view the sourcecode of my website.
-				<br />
-				Also on the right hand is a scrollable miniature version of this website :)
+				My portfolio is listed here so you can view the source code or play around with the miniature version on the right hand side.
 			</ProjectWebsite>
 		</div>
 	);
