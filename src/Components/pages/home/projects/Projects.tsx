@@ -6,7 +6,7 @@ import dungeon from '../../../../resources/media/dungeon.png';
 import wahlen from "../../../../resources/media/wahlen.png"
 import attack from "../../../../resources/media/attack.png"
 import online from "../../../../resources/media/online.png"
-import ProjectPortfolio from './ProjectPortfolio';
+import ProjectWebsite from './ProjectWebsite';
 
 const Projects = () =>
 {
@@ -47,20 +47,23 @@ const Projects = () =>
 				Fairy Tail Attack! is an card generator to easily create and modify playing cards for virtual tabletop gaming.
 			</Project>
 
+			<ProjectWebsite title={"aasffsa"} gradient={[]} url={"https://dungeon.kaibarzen.cloud/"} />
+
 			<Project title={"Am I Online?"} gradient={[]} image={online} reversed={true} href={"https://online.kaibarzen.cloud/"} source={"https://github.com/kaibarzen/Am-I-Online"}>
 				FTA!
 			</Project>
 
-			<ProjectPortfolio
+			<ProjectWebsite
 				title={'My Portfolio Website'}
 				tags={["React", "Typescript", "Sass"]}
 				gradient={["#c0392b", "#8e44ad"]}
 				source={"https://github.com/kaibarzen/portfolio-v4"}
+				url={"https://master.d2sr79gikb2sst.amplifyapp.com/"}
 			>
 				This is listed here so you view the sourcecode of my website.
 				<br/>
 				Also on the right hand is a scrollable miniature version of this website :)
-			</ProjectPortfolio>
+			</ProjectWebsite>
 		</div>
 	);
 };
