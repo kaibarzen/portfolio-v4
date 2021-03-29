@@ -22,7 +22,7 @@ const Projects = () =>
 				<Project
 					title={'Dungeon Generator'}
 					image={dungeon}
-					tags={['React', 'Typescript', 'MobX']}
+					tags={['Typescript', 'React', 'MobX']}
 					gradient={[]}
 					source={'https://github.com/kaibarzen/lf_dungeon'}
 					href={'https://dungeon.kaibarzen.cloud/'}
@@ -34,7 +34,7 @@ const Projects = () =>
 			<Project
 				title={'Rhineland-Palatinate Elections'}
 				image={wahlen}
-				tags={['Typescript', 'React', 'AWS', 'Amplify', 'Lambda', 'ApiGateway', 'MongoDB']}
+				tags={['Typescript', 'Sass', 'React', 'MongoDB', 'AWS', 'Amplify', 'Lambda', 'ApiGateway']}
 				reversed={true}
 				gradient={[]}
 				href={'https://wahlen.volksfreund.cloud/'}
@@ -45,7 +45,7 @@ const Projects = () =>
 
 			<Project
 				title={'Fairy Tail Attack!'}
-				tags={['NodeJS', 'Typescript', 'Sass']}
+				tags={['Typescript', 'Sass', 'NodeJS']}
 				gradient={['#8A2387', '#E94057', '#F27121']}
 				image={attack}
 				source={'https://github.com/kaibarzen/fairy-tail-attack'}
@@ -61,19 +61,21 @@ const Projects = () =>
 				url={'https://online.kaibarzen.cloud/'}
 				href={'https://online.kaibarzen.cloud/'}
 				source={'https://github.com/kaibarzen/Am-I-Online'}
-				tags={["Javascript", "React", "AWS", "Lambda", "ApiGateway"]}
+				tags={['Javascript', 'React', 'AWS', 'Lambda', 'ApiGateway']}
 			>
-				Am I Online? is a PWA app created to test your connectivity, you can install it on your device for offline functionality.
+				Am I Online? is a PWA app created to test your connectivity, you can install it on your device for
+				offline functionality.
 			</ProjectWebsite>
 
 			<ProjectWebsite
 				title={'My Portfolio Website'}
-				tags={['React', 'Typescript', 'Sass']}
+				tags={['Typescript', 'Sass', 'React', "AWS", "Amplify"]}
 				gradient={['#c0392b', '#8e44ad']}
 				source={'https://github.com/kaibarzen/portfolio-v4'}
 				url={'https://master.d2sr79gikb2sst.amplifyapp.com/'}
 			>
-				My portfolio is listed here so you can view the source code or play around with the miniature version on the right-hand side.
+				My portfolio is listed here so you can view the source code or play around with the miniature version on
+				the right-hand side.
 			</ProjectWebsite>
 		</div>
 	);
