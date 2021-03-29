@@ -4,6 +4,8 @@ import Project from './Project';
 import {Element} from 'react-scroll/modules';
 import dungeon from '../../../../resources/media/dungeon.png';
 import wahlen from "../../../../resources/media/wahlen.png"
+import attack from "../../../../resources/media/attack.png"
+import online from "../../../../resources/media/online.png"
 import ProjectPortfolio from './ProjectPortfolio';
 
 const Projects = () =>
@@ -41,10 +43,19 @@ const Projects = () =>
 				Over the timespan of 24 hours the website got served 95,000 times with 135,000 successful api calls.
 			</Project>
 
+			<Project title={"Fairy Tail Attack!"} tags={["NodeJS", "Typescript", "Sass"]} gradient={["#8A2387", "#E94057", "#F27121"]} image={attack} source={"https://github.com/kaibarzen/fairy-tail-attack"}>
+				Fairy Tail Attack! is an card generator to easily create and modify playing cards for virtual tabletop gaming.
+			</Project>
+
+			<Project title={"Am I Online?"} gradient={[]} image={online} reversed={true} href={"https://online.kaibarzen.cloud/"} source={"https://github.com/kaibarzen/Am-I-Online"}>
+				FTA!
+			</Project>
+
 			<ProjectPortfolio
 				title={'My Portfolio Website'}
 				tags={["React", "Typescript", "Sass"]}
 				gradient={["#c0392b", "#8e44ad"]}
+				source={"https://github.com/kaibarzen/portfolio-v4"}
 			>
 				This is listed here so you view the sourcecode of my website.
 				<br/>
