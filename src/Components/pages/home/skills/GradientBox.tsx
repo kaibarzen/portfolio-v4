@@ -1,8 +1,9 @@
 import React, {ReactNode} from 'react';
+import {isArray} from 'util';
 
 interface Props
 {
-	children?: ReactNode,
+	children: ReactNode,
 	gradient?: string[],
 	title?: string,
 	direction?: string
@@ -32,10 +33,21 @@ const GradientBox = (props: Props) =>
 				className={'content'}
 				style={{
 					borderLeft: `4px solid ${gradient[0]}`,
-					borderRight: `4px solid ${gradient[gradient.length - 1]}`
+					borderRight: `4px solid ${gradient[gradient.length - 1]}`,
 				}}
 			>
-				{props.children}
+				{Array.isArray(props.children) ?
+					props.children.map((item, key) =>
+					{
+						return (
+							<div style={{border: `1px solid ${gradient[0]}`}}>
+								{item}
+							</div>
+						);
+					})
+					:
+					null
+				}
 			</div>
 			<div
 				className={'gradient'}
