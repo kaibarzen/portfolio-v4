@@ -76,14 +76,18 @@ const ProjectWebsite = (props: Props) =>
 			</div>
 
 			<div className={'iContainer'}>
-				<div style={{
-					transform: `scale(${scale}, ${scale})`
-				}}>
-					<iframe src={props.url}
+				<div
 					style={{
-						width,
-						height
+						transform: `scale(${scale}, ${scale})`,
 					}}
+				>
+					<iframe
+						src={props.url}
+						style={{
+							width,
+							height,
+						}}
+						title={props.url}
 					/>
 				</div>
 			</div>

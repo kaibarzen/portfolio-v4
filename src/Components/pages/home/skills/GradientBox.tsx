@@ -1,5 +1,4 @@
 import React, {ReactNode} from 'react';
-import {isArray} from 'util';
 
 interface Props
 {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './intro.sass';
 import person from '../../../../resources/media/person.svg';
-import {Element, scroller, animateScroll} from 'react-scroll/modules';
+import {Element, scroller} from 'react-scroll/modules';
 
 const Intro = () =>
 {
