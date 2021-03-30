@@ -13,14 +13,10 @@ interface Props
 	reversed?: boolean
 	gradient: string[]
 	url: string,
-	scaling?: number,
 }
 
 const ProjectWebsite = (props: Props) =>
 {
-	const scale = 1 - (props.scaling || 1) * 0.7;
-	const width = Math.floor((props.scaling || 1) * 1920);
-	const height = Math.floor((props.scaling || 1) * 1080);
 
 	return (
 		<div
@@ -76,17 +72,9 @@ const ProjectWebsite = (props: Props) =>
 			</div>
 
 			<div className={'iContainer'}>
-				<div
-					style={{
-						transform: `scale(${scale}, ${scale})`,
-					}}
-				>
+				<div>
 					<iframe
 						src={props.url}
-						style={{
-							width,
-							height,
-						}}
 						title={props.url}
 					/>
 				</div>

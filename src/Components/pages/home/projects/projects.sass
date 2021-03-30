@@ -34,8 +34,10 @@ $containerPadding: 64px
         flex-grow: 2
         min-height: 100px
         width: fit-content
-        min-width: 600px
-        max-width: 50vw
+        max-width: 100%
+        @media (min-width: 800px)
+          width: fit-content
+          max-width: 50vw
 
       h2
         width: fit-content
@@ -58,6 +60,14 @@ $containerPadding: 64px
       flex-direction: column
       align-items: center
       justify-content: center
+      max-width: 600px
+      max-height: 350px
+
+      img
+        width: auto
+        height: auto
+        max-width: 100%
+        max-height: 100%
 
     img
       box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.75)
@@ -67,6 +77,7 @@ $containerPadding: 64px
 
     .tags
       display: flex
+      flex-wrap: wrap
 
     .tags > div
       padding: 8px
@@ -84,7 +95,14 @@ $containerPadding: 64px
     width: 600px
     height: 300px
 
+    div
+      transform: scale(0.2, 0.2)
+      @media (min-width: 620px)
+        transform: scale(0.3, 0.3)
+
     iframe
       border-radius: 26px
       background: linear-gradient(to right, #642B73, #C6426E)
       box-shadow: 0px 0px 128px 0px rgba(0,0,0,0.75)
+      width: 1920px
+      height: 1080px
