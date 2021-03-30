@@ -2,10 +2,9 @@ import React from 'react';
 import './projects.sass';
 import Project from './Project';
 import {Element} from 'react-scroll/modules';
-import dungeon from '../../../../resources/media/dungeon.png';
-import wahlen from '../../../../resources/media/wahlen.png';
-import attack from '../../../../resources/media/attack.png';
-import online from '../../../../resources/media/online.png';
+import dungeon from '../../../../resources/media/dungeon.webp';
+import wahlen from '../../../../resources/media/wahlen.webp';
+import attack from '../../../../resources/media/attack.webp';
 import ProjectWebsite from './ProjectWebsite';
 
 const Projects = () =>
