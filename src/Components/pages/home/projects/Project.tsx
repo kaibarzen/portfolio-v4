@@ -2,12 +2,14 @@ import React, {ReactNode} from 'react';
 import CypherVisible from '../../../kit/effect/CypherVisible';
 import CodeIcon from '@material-ui/icons/Code';
 import CallMadeIcon from '@material-ui/icons/CallMade';
+import Image from 'react-image-webp';
 
 interface Props
 {
 	title: string,
 	children?: ReactNode,
 	image: string,
+	imageWebp: string,
 	source?: string,
 	href?: string,
 	tags?: string[]
@@ -72,9 +74,10 @@ const Project = (props: Props) =>
 			</div>
 
 			<div className={'img'}>
-				<img
-					src={props.image}
-					alt={'ALT Description'}
+				<Image
+					 src={props.image}
+					 webp={props.imageWebp}
+					 alt={"alt description"}
 				/>
 			</div>
 		</div>

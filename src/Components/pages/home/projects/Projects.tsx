@@ -2,9 +2,12 @@ import React from 'react';
 import './projects.sass';
 import Project from './Project';
 import {Element} from 'react-scroll/modules';
-import dungeon from '../../../../resources/media/dungeon.webp';
-import wahlen from '../../../../resources/media/wahlen.webp';
-import attack from '../../../../resources/media/attack.webp';
+import dungeonWebp from '../../../../resources/media/dungeon.webp';
+import dungeon from '../../../../resources/media/dungeon.png';
+import wahlenWebp from '../../../../resources/media/wahlen.webp';
+import wahlen from '../../../../resources/media/wahlen.png';
+import attackWebp from '../../../../resources/media/attack.webp';
+import attack from '../../../../resources/media/attack.png';
 import ProjectWebsite from './ProjectWebsite';
 
 const Projects = () =>
@@ -21,6 +24,7 @@ const Projects = () =>
 				<Project
 					title={'Dungeon Generator'}
 					image={dungeon}
+					imageWebp={dungeonWebp}
 					tags={['Typescript', 'React', 'MobX']}
 					gradient={[]}
 					source={'https://github.com/kaibarzen/lf_dungeon'}
@@ -33,6 +37,7 @@ const Projects = () =>
 			<Project
 				title={'Rhineland-Palatinate Elections'}
 				image={wahlen}
+				imageWebp={wahlenWebp}
 				tags={['Typescript', 'Sass', 'React', 'MongoDB', 'AWS', 'Amplify', 'Lambda', 'ApiGateway']}
 				reversed={true}
 				gradient={[]}
@@ -47,6 +52,7 @@ const Projects = () =>
 				tags={['Typescript', 'Sass', 'NodeJS']}
 				gradient={['#8A2387', '#E94057', '#F27121']}
 				image={attack}
+				imageWebp={attackWebp}
 				source={'https://github.com/kaibarzen/fairy-tail-attack'}
 			>
 				Fairy Tail Attack! is a card generator to easily create and modify playing cards for virtual tabletop
